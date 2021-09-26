@@ -29,14 +29,14 @@ public class FileOpTest {
 	@Test
 	public void givenDirectoryName_ShoulCreateDirectory_ReturnTrue() throws IOException {
 		FileOp util = new FileOp();
-		util.createDirectory("lib");
+		util.createDirectory("training");
 		Assert.assertTrue(Files.isDirectory(Paths.get("/Users/kshamavidyananda/eclipse-workspace/EmployeePayRoll/data/training")));
 	}
 	
 	@Test
 	public void givenFileName_AsInput_ShouldCreateFile_ShouldReturntrue() throws IOException {
 		FileOp util = new FileOp();
-		util.createEmptyFile("demo2.txt");
+		util.createEmptyFile("demo1.txt");
 		Assert.assertTrue(Files.exists(Paths.get("/Users/kshamavidyananda/eclipse-workspace/EmployeePayRoll/data/demo1.txt")));
 	}
 }
