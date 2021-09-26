@@ -80,13 +80,13 @@ public class EmplyeePayRollService {
 	/**
 	 * method to return number of entries in the file
 	 * 
-	 * @return int returns the count
+	 * @return it returns the count
 	 * @throws IOException
 	 */
 	public long countLines() throws IOException {
 		long entries = 0;
 		entries = Files.lines(new File(path).toPath()).count();
-		System.out.println(entries);
+		System.out.println("Number of entries "+entries);
 		return entries;
 	}
 
